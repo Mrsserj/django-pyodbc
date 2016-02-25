@@ -4,6 +4,8 @@ except:
     # import location prior to Django 1.8
     from django.db.backends import BaseDatabaseIntrospection
 import pyodbc as Database
+from collections import namedtuple
+TableInfo = namedtuple('TableInfo', ['name', 'type'])
 
 SQL_AUTOFIELD = -777555
 
